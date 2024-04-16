@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import {React,Fragment} from "react";
 
 function App() {
   return (
+    // 不能在最外层加div 切需要并列的div时 加Fragment 
+    <Fragment>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>This is React</h1>
     </div>
+    <div className="AppOther">
+      <h1>This is React other</h1>
+    </div>
+    </Fragment>
   );
 }
 
